@@ -14,19 +14,20 @@ public class TypewriterTrigger : MonoBehaviour
         switch (who)
         {
             case "Mia":
-                lineToDisplay = "You shake her bag...";
+                message = "You shake her bag...";
                 break;
             case "Chloe":
-                lineToDisplay = "You shake her bag...";
+                message = "You shake her bag...";
                 break;
             case "Ava":
-                lineToDisplay = "You shake her bag...";
+                message = "You shake her bag...";
                 break;
             case "Noah":
-                lineToDisplay = "You pat him down...";
+                message = "You pat him down...";
                 break;
             case "Oliver":
-                lineToDisplay = "You pat him down...";
+                message = "You pat him down...";
+                break;
             default:
                 message = "Unknown character.";
                 break;

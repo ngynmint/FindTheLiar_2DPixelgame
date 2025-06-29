@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
          Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        transform.Translate(move * 5f * Time.deltaTime);
 
         if (move.x > 0)
             spriteRenderer.sprite = PlayerMoveRight;
