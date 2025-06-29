@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChangeTrigger : MonoBehaviour
+public class SceneChangeTriggerStairs : MonoBehaviour
 {
     public string sceneToLoad; 
 
