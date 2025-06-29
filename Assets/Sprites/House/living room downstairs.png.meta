@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,658 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KitchenRight
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 838
+        width: 20
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a69e48190943684cba199217e199579
+      internalID: 322262076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingleftBottom
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 646
+        width: 21
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ac80db64c43e94895fa90d7b17513d
+      internalID: 1903244067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviRugBig
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 512
+        width: 198
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6006e0c66d5a7644b4aa3d0cc83b29f
+      internalID: 9524088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviChimney
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 476
+        width: 102
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca087f67e3e25fd45bce1717b9398e53
+      internalID: 191731320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviRug
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 543
+        width: 102
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3e16d450920b7448629637eaa3cf65
+      internalID: 1088932725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviTablePlant
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 529
+        width: 84
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af65601a9f4771742876bbc632f49bef
+      internalID: 65665226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviStool2
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 545
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0672df7894426428553d246e7077f3
+      internalID: -869831752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviTable
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 509
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d45887fbe69ead43b9e817652cc708b
+      internalID: 667499958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviStoolq
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 545
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761f909b7bc22a549922b4c965d11014
+      internalID: -1796113769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviPot
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 535
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c464eb8bec34af408c5cd3c5fe90107
+      internalID: 85815695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviStairs
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 390
+        width: 103
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133fb73cbe18bc34b8417635d1d192d8
+      internalID: -746300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviDoor
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 424
+        width: 108
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa9a5a61bc191143a85e38e40eb82fa
+      internalID: -880811334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviRack
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 423
+        width: 36
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392e9ec42d226a940aa48a0bcd5ae063
+      internalID: -1737163631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviVase2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 416
+        width: 27
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994e333416f596b4bb58cdba254f8212
+      internalID: 1171107953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviBooks
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 417
+        width: 59
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41abe28105de93b47a38d70a5e207231
+      internalID: 1371130850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviVase1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 419
+        width: 27
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de15a096fb698ff4f9467e620b89ff49
+      internalID: -1262249827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviKitchen
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 422
+        width: 189
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66ad8ada4fd8384f81e913cadb0de10
+      internalID: 225472072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviFloorWhole
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 38
+        width: 815
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2996b88750e54468c7ec813c49812f
+      internalID: -2062415949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchenpart1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 934
+        width: 235
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7775c29c97be34480f94731b1a9b56
+      internalID: -215553278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KicthenWallleft
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 712
+        width: 22
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecea626c047d52643b6e27d97bb00379
+      internalID: -1458181986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KicthenWallBottom
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 712
+        width: 234
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66600a8571d0ea545b3828c6d518523e
+      internalID: -1660694067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KitchenWallLeft
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 742
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29811894e488d214dbee327ff66aecdd
+      internalID: -1929083974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InbetweenWallBottom
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 760
+        width: 102
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f75c4a44a64fc4a86412a052f8413a
+      internalID: 1740664544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingWallLeft
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 838
+        width: 21
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd74e0887ce2a74685886517853fb06
+      internalID: 890206170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingWallTop
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 982
+        width: 523
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcd0893ee68dca4bb5a5ce08b510c24
+      internalID: 1892920437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingRightBigWall
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 886
+        width: 117
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25713a351e61e4f46b85b465d0bc243c
+      internalID: 1162971816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviWallRight
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 712
+        width: 21
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e71d4d774254e94d862b98164819d89
+      internalID: 1859922863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviBottomLeftWall
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 616
+        width: 87
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8b5b823506c2841bacbb01966b4069
+      internalID: -861637182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviBottomRigth
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 616
+        width: 135
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78712c97685321f4f86071347cbe1dff
+      internalID: -122808455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviRigthBottom
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 646
+        width: 21
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4948614062448479737098fe9b1188
+      internalID: 777516857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiviRigthBotto
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 712
+        width: 171
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb195c077c64a34dabcafd402419499
+      internalID: 298554469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +757,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InbetweenWallBottom: 1740664544
+      KicthenWallBottom: -1660694067
+      KicthenWallleft: -1458181986
+      KitchenRight: 322262076
+      KitchenWallLeft: -1929083974
+      Kitchenpart1: -215553278
+      LiviBooks: 1371130850
+      LiviBottomLeftWall: -861637182
+      LiviBottomRigth: -122808455
+      LiviChimney: 191731320
+      LiviDoor: -880811334
+      LiviFloorWhole: -2062415949
+      LiviKitchen: 225472072
+      LiviPot: 85815695
+      LiviRack: -1737163631
+      LiviRigthBotto: 298554469
+      LiviRigthBottom: 777516857
+      LiviRug: 1088932725
+      LiviRugBig: 9524088
+      LiviStairs: -746300148
+      LiviStool2: -869831752
+      LiviStoolq: -1796113769
+      LiviTable: 667499958
+      LiviTablePlant: 65665226
+      LiviVase1: -1262249827
+      LiviVase2: 1171107953
+      LiviWallRight: 1859922863
+      LivingRightBigWall: 1162971816
+      LivingWallLeft: 890206170
+      LivingWallTop: 1892920437
+      LivingleftBottom: 1903244067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

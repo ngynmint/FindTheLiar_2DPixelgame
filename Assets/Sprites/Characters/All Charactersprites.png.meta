@@ -100,19 +100,19 @@ TextureImporter:
       name: Mia
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 201
-        height: 384
+        x: 18
+        y: 6
+        width: 162
+        height: 372
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7aca39d1b4e28e499e91d15d00b479e
-      internalID: 1632926535
+      spriteID: 41ae2f762931e2f46aa389ff3201fd21
+      internalID: -625996037
       vertices: []
       indices: 
       edges: []
@@ -121,19 +121,19 @@ TextureImporter:
       name: Noah
       rect:
         serializedVersion: 2
-        x: 201
-        y: 0
-        width: 201
-        height: 384
+        x: 222
+        y: 6
+        width: 180
+        height: 372
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 556b3dae6c0116c468ecb04010a216f3
-      internalID: 1030640072
+      spriteID: b49964de625e422449bb2b20adbcfeeb
+      internalID: -1872519657
       vertices: []
       indices: 
       edges: []
@@ -142,19 +142,19 @@ TextureImporter:
       name: Ava
       rect:
         serializedVersion: 2
-        x: 402
-        y: 0
-        width: 201
-        height: 384
+        x: 432
+        y: 6
+        width: 180
+        height: 372
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e452a7d411613894588f2fc0b2e77622
-      internalID: 589135245
+      spriteID: e9118abe5a0cc5d4d9a65cc8105de09b
+      internalID: -1291521389
       vertices: []
       indices: 
       edges: []
@@ -163,19 +163,19 @@ TextureImporter:
       name: Chloe
       rect:
         serializedVersion: 2
-        x: 603
-        y: 0
-        width: 201
-        height: 384
+        x: 636
+        y: 6
+        width: 150
+        height: 372
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63ac7bf4fbce9a54cab74c47e2f50a44
-      internalID: -105467133
+      spriteID: 4f305a5963df6114b834d926cae78c20
+      internalID: -538722559
       vertices: []
       indices: 
       edges: []
@@ -184,19 +184,19 @@ TextureImporter:
       name: Oliver
       rect:
         serializedVersion: 2
-        x: 804
-        y: 0
-        width: 201
-        height: 384
+        x: 822
+        y: 1
+        width: 150
+        height: 378
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f45751ba38855ce4188a6b479a513ceb
-      internalID: 2057793188
+      spriteID: 9a79dce28948d6a4cafdc8bf92a4f1e7
+      internalID: -917306904
       vertices: []
       indices: 
       edges: []
@@ -212,11 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ava: 589135245
-      Chloe: -105467133
-      Mia: 1632926535
-      Noah: 1030640072
-      Oliver: 2057793188
+      Ava: -1291521389
+      Chloe: -538722559
+      Mia: -625996037
+      Noah: -1872519657
+      Oliver: -917306904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

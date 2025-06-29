@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BedWalls
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 492
+        width: 713
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eeca7282807e174491857fe8c266bde
+      internalID: -1178427190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedBed
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 434
+        width: 93
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e152e06f04531428ae62c925e04b54
+      internalID: 1101436018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedTable
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 432
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59675eaafbb93964694b70df271d4b8d
+      internalID: 361508658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedCouch2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 428
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d461e569cf453b44cb125a9b3c700965
+      internalID: 866622090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedCloset
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 370
+        width: 48
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d22ddbb8db053d4184b50bb9d5bab4e
+      internalID: -904046905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedBooks
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 390
+        width: 144
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd47e7835236f64fa480e658d15ab56
+      internalID: 479834784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedPc
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 384
+        width: 84
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b40e719edd045419077b0b6180c221
+      internalID: 938036346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRug1
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 353
+        width: 102
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a857ea6871a60cd4f94fa222281d0ef3
+      internalID: 1910300468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRug2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 392
+        width: 102
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e1ea2c4446a8845869ca18d022434d
+      internalID: -1519253382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom upstairs_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 343
+        width: 66
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f89f99e54a80a64082603070ea61f71
+      internalID: 1643572627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedPlant
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 350
+        width: 47
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1479b1a6a3e41488933beeb98c7644
+      internalID: -546830675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedCouch1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 347
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4127ff682e08a94cb5feb289544ab62
+      internalID: 308939243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedDoorSide
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 349
+        width: 20
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731200648bdd6e145a5fd98377adf054
+      internalID: 1853295805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedDoorBottom
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 350
+        width: 108
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a06886fd23214ba1d353317c73ebd
+      internalID: 1122537883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedFloorWhole
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 669
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081ddb4d99e5a6e428cd21bcd1ef45b9
+      internalID: -1659991290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +421,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BedBed: 1101436018
+      BedBooks: 479834784
+      BedCloset: -904046905
+      BedCouch1: 308939243
+      BedCouch2: 866622090
+      BedDoorBottom: 1122537883
+      BedDoorSide: 1853295805
+      BedFloorWhole: -1659991290
+      BedPc: 938036346
+      BedPlant: -546830675
+      BedRug1: 1910300468
+      BedRug2: -1519253382
+      BedTable: 361508658
+      BedWalls: -1178427190
+      bedroom upstairs_9: 1643572627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
