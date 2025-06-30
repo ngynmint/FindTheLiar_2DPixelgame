@@ -9,6 +9,7 @@ public class SceneChangeTriggerStairs : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SpawnPointData.spawnPointName = "SpawnPointStairs";
             SceneManager.LoadScene(sceneToLoad);
         }
     }

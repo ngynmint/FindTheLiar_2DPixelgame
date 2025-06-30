@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 1383662805}
   - component: {fileID: 1383662804}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: QuitManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1443,7 +1443,7 @@ GameObject:
   - component: {fileID: 2095527427}
   - component: {fileID: 2095527426}
   m_Layer: 0
-  m_Name: GameManager2
+  m_Name: StartManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
