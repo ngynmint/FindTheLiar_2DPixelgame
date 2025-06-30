@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class ShowPanelOnTrigger : MonoBehaviour
 {
-    public GameObject panelToShow;  
+    public GameObject panelToShow;
+    public GameObject buttonToHide;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player"))
         {
             panelToShow.SetActive(true);
+            if (buttonToHide != null)
+                buttonToHide.SetActive(false);
         }
     }
 
@@ -16,6 +19,8 @@ public class ShowPanelOnTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             panelToShow.SetActive(false);
+            if (buttonToHide != null)
+                buttonToHide.SetActive(true);
         }
     }
 }
