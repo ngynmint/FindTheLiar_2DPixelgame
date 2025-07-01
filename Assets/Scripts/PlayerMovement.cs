@@ -8,9 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public Sprite PlayerFront_Idle;
     public Sprite PlayerBack_Idle;
     public Sprite PlayerMoveLeft;
-  
+
 
     private SpriteRenderer spriteRenderer;
+      public bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,12 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
+        if (!canMove)
+            return;
+
+            
          Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         transform.Translate(move * 5f * Time.deltaTime);
 
