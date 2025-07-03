@@ -22,7 +22,6 @@ public class DialogueManager : MonoBehaviour
     private PlayerMovement playerMovement;
 
     private NPC currentNPC;
-    private int step = 0;
 
     private void Awake()
     {
@@ -43,7 +42,6 @@ public class DialogueManager : MonoBehaviour
         talkButton.GetComponent<Button>().onClick.AddListener(OnTalk);
         confirmButton.GetComponent<Button>().onClick.AddListener(OnPlayerConfirm);
         //nextButton.GetComponent<Button>().onClick.AddListener(NextStep);
-        Debug.Log(step);
     }
 
     public void SetCurrentNPC(NPC npc)
@@ -55,16 +53,35 @@ public class DialogueManager : MonoBehaviour
 
     void OnTalk()
     {
+        if (GameManager.Instance == null)
+        {
+            Debug.LogError("GameManager instance is null!");
+            return;
+        }
+        if (currentNPC == null)
+        {
+            Debug.LogError("Current NPC is null!");
+            return;
+        }
+        if (string.IsNullOrEmpty(currentNPC.npcName))
+        {
+            Debug.LogError("Current NPC's npcName is null or empty!");
+            return;
+        }
+
+        currentNPC.dialogueStep = GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep;
         playerMovement.canMove = false;
         talkButton.SetActive(false);
-        if (step >= 5)
+        if (GameManager.Instance.GetNPCState(currentNPC.npcName).hasTalkedToPlayer ==true)
         {
+            currentNPC.dialoguePanel.SetActive(true);
             string response = AlreadyTalkedResponse(currentNPC.npcName);
             StartCoroutine(TypewriterEffect(currentNPC.npcTextField, response));
+            playerMovement.canMove = true;
         }
         else
         {
-        StartCoroutine(SendToGroq("")); 
+            StartCoroutine(SendToGroq(""));
         }
         ;
         
@@ -92,14 +109,15 @@ public class DialogueManager : MonoBehaviour
 public GameObject ScrollViewPlayer;
     public void NextStep()
     {
-        step++;
-        Debug.Log(step);
+        currentNPC.dialogueStep++;
+        Debug.Log(currentNPC.dialogueStep);
+        GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep = currentNPC.dialogueStep;
 
-        if (step == 1 || step == 3)
+        if (currentNPC.dialogueStep == 1 || currentNPC.dialogueStep == 3)
         {
             currentNPC.dialoguePanel.SetActive(false);
             currentNPC.npcTextField.text = "";
-            dialogueScrollRect.verticalNormalizedPosition = 1f;
+            //dialogueScrollRect.verticalNormalizedPosition = 1f;
 
             playerPanel.SetActive(true);
             playerInput.text = "";
@@ -107,7 +125,7 @@ public GameObject ScrollViewPlayer;
             playerInput.ActivateInputField();
             confirmButton.SetActive(true);
         }
-        else if (step == 5)
+        else if (currentNPC.dialogueStep == 5)
         {
             GameManager.Instance.GetNPCState(currentNPC.npcName).hasTalkedToPlayer = true;
             EndDialogue();
@@ -120,7 +138,8 @@ public GameObject ScrollViewPlayer;
     
     void OnPlayerConfirm()
     {
-        step++;
+        currentNPC.dialogueStep++;
+        GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep = currentNPC.dialogueStep;
         string userInput = playerInput.text.Trim();
         if (string.IsNullOrEmpty(userInput)) return;
 
@@ -132,12 +151,11 @@ public GameObject ScrollViewPlayer;
         playerInput.text = "";
         StartCoroutine(SendToGroq(userInput));
     }
-
     IEnumerator SendToGroq(string prompt)
     {
         Debug.Log("Sending Prompt to AI");
         Debug.Log(prompt);
-        if (step == 0)
+        if (currentNPC.dialogueStep == 0)
             currentNPC.messageHistory.Add(("user", prompt));
 
         List<ChatMessage> formattedMessages = new List<ChatMessage>();
@@ -151,8 +169,9 @@ public GameObject ScrollViewPlayer;
             currentNPC.messageHistory.Add(("assistant", response));
             playerPanel.SetActive(false);
             currentNPC.dialoguePanel.SetActive(true);
+            currentNPC.npcNotes.SetActive(true);
             currentNPC.npcTextField.text = "";
-            dialogueScrollRect.verticalNormalizedPosition = 0f;
+            //dialogueScrollRect.verticalNormalizedPosition = 0f;
 
             StartCoroutine(TypewriterEffect(currentNPC.npcTextField, response));
         });
@@ -175,8 +194,25 @@ public GameObject ScrollViewPlayer;
 
             yield return new WaitForSeconds(0.02f);
         }
-            Debug.Log("Typing done");
+        Canvas.ForceUpdateCanvases();
+        dialogueScrollRect.verticalNormalizedPosition = 0f;
+        Debug.Log("Typing done");
+
+        yield return null;
+        Canvas.ForceUpdateCanvases();
+        //dialogueScrollRect.verticalNormalizedPosition = 0f;
+
+        if (currentNPC.dialogueStep < 5)
+        {
             nextButton.SetActive(true);
+        }
+        else
+        {
+            yield return new WaitForSeconds(1.5f);
+            currentNPC.dialoguePanel.SetActive(false);
+            currentNPC.npcTextField.text = "";
+        }
+            
     }
 
     void EndDialogue()
@@ -184,6 +220,7 @@ public GameObject ScrollViewPlayer;
         currentNPC.dialoguePanel.SetActive(false);
         currentNPC.npcTextField.text = "";
         playerPanel.SetActive(false);
+        currentNPC.npcNotes.SetActive(false);
         confirmButton.SetActive(false);
         nextButton.SetActive(false);
         playerMovement.canMove = true;

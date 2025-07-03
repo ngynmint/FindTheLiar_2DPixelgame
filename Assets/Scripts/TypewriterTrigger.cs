@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TypewriterTrigger : MonoBehaviour
 {
-    public TMP_Text targetText;   // Drag your canvas TMP Text here in Inspector
+    public TMP_Text targetText;   
     public float typingSpeed = 0.05f;
 
     public void TriggerText(string who)

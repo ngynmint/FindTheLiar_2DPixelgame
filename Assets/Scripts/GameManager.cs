@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         public string npcName;
         public List<(string role, string content)> messageHistory = new();
         public bool hasTalkedToPlayer = false;
+        public int dialogueStep = 0;
     }
 
 }
-
