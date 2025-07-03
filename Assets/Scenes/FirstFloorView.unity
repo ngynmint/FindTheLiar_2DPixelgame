@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307d6a07f68d4fb4aa0fda2a7ad787dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  apiKey: 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
+  apiKey: 
   model: llama-3.1-8b-instant
 --- !u!1 &94305572
 GameObject:

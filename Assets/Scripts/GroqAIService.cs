@@ -10,7 +10,7 @@ public class GroqAIService : MonoBehaviour
     public static GroqAIService Instance;
 
     [Header("Groq API Settings")]
-    public string apiKey = "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";  
+    public string apiKey = "";  
     private string endpoint = "https://api.groq.com/openai/v1/chat/completions";
     public string model = "llama-3.1-8b-instant";  
 
