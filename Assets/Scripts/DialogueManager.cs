@@ -19,14 +19,18 @@ public class DialogueManager : MonoBehaviour
     public TMP_InputField playerInput;
 
     public GameObject player;
-    private PlayerMovement playerMovement;
+    [HideInInspector]
+    public PlayerMovement playerMovement;
 
     private NPC currentNPC;
 
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else
             Destroy(gameObject);
     }
@@ -51,7 +55,7 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    void OnTalk()
+    public void OnTalk()
     {
         if (GameManager.Instance == null)
         {
@@ -106,7 +110,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-public GameObject ScrollViewPlayer;
+    public GameObject ScrollViewPlayer;
     public void NextStep()
     {
         currentNPC.dialogueStep++;
@@ -136,7 +140,7 @@ public GameObject ScrollViewPlayer;
 
     
     
-    void OnPlayerConfirm()
+    public void OnPlayerConfirm()
     {
         currentNPC.dialogueStep++;
         GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep = currentNPC.dialogueStep;
@@ -189,8 +193,6 @@ public GameObject ScrollViewPlayer;
         {
             textComp.text += fullText[i];
             Canvas.ForceUpdateCanvases();
-
-            dialogueScrollRect.verticalNormalizedPosition = 0f;
 
             yield return new WaitForSeconds(0.02f);
         }

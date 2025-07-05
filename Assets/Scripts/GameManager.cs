@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
 
     public List<NPCState> npcStates = new();
 
+    public void Start()
+    {
+        ResetAllNPCStates();
+    }
+
     private void Awake()
     {
         if (Instance == null)
@@ -20,6 +25,17 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void ResetAllNPCStates()
+    {
+    foreach (var state in npcStates)
+    {
+        state.hasTalkedToPlayer = false;
+        state.dialogueStep = 0;
+        //state.messageHistory.Clear();
+    }
+    }
+
 
     public NPCState GetNPCState(string npcName)
     {

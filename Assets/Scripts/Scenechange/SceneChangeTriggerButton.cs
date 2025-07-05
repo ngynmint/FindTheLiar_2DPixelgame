@@ -7,5 +7,6 @@ public class SceneChanger : MonoBehaviour
     {
         SpawnPointData.spawnPointName = "SpawnPointDoor";
         SceneManager.LoadScene(sceneName);
+        
     }
 }

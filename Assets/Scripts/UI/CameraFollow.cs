@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;      // Drag your player GameObject here
+    public Transform target;     
     public float smoothSpeed = 0.125f;
-    public Vector3 offset;        // You can adjust if you want the camera not centered
+    public Vector3 offset;        
+
 
     void LateUpdate()
     {

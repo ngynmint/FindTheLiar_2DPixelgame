@@ -6,9 +6,11 @@ public class TypewriterTrigger : MonoBehaviour
 {
     public TMP_Text targetText;   
     public float typingSpeed = 0.05f;
-
+    public EndSceneController endSceneController;
+    private string suspectName;
     public void TriggerText(string who)
     {
+        suspectName = who;
         string message = "";
 
         switch (who)
@@ -45,5 +47,8 @@ public class TypewriterTrigger : MonoBehaviour
             targetText.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
+        yield return new WaitForSeconds(2f);
+    
+        endSceneController.CheckResult(suspectName);
     }
 }

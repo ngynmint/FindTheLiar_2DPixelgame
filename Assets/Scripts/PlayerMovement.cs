@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-  public Sprite PlayerMoveRight;
+    public Sprite PlayerMoveRight;
     public Sprite PlayerFront_Idle;
     public Sprite PlayerBack_Idle;
     public Sprite PlayerMoveLeft;
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
             return;
 
             
-         Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         transform.Translate(move * 5f * Time.deltaTime);
 
         if (move.x > 0)
