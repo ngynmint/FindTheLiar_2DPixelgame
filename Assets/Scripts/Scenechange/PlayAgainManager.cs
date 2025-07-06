@@ -7,24 +7,42 @@ public class PlayAgainManager : MonoBehaviour
 
     public void OnPlayAgain()
     {
+        Debug.Log("Play Again button clicked!");
         if (GameManager.Instance != null)
-            GameManager.Instance.ResetAndDestroy();
+        {
+            Destroy(GameManager.Instance.gameObject);
+            GameManager.Instance = null;
+        }
 
         if (PlayerProgressTracker.Instance != null)
-            PlayerProgressTracker.Instance.ResetAndDestroy();
-            
+        {
+            Destroy(PlayerProgressTracker.Instance.gameObject);
+            PlayerProgressTracker.Instance = null;
+        }
+
         if (DialogueManager.Instance != null)
-            DialogueManager.Instance.ResetAndDestroy();
+        {
+            Destroy(DialogueManager.Instance.gameObject);
+            DialogueManager.Instance = null;
+        }
 
-        if (SuspectListManager.Instance != null)
-            SuspectListManager.Instance.ResetAndDestroy();
+         if (SuspectListManager.Instance != null)
+        {
+            Destroy(SuspectListManager.Instance.gameObject);
+            SuspectListManager.Instance = null;
+        }
 
-        if (EndSceneController.Instance != null)
-            EndSceneController.Instance.ResetAndDestroy();
+          if (EndSceneController.Instance != null)
+        {
+            Destroy(EndSceneController.Instance.gameObject);
+            EndSceneController.Instance = null;
+        }
 
         if (LiarChooser.Instance != null)
-            LiarChooser.Instance.ResetAndDestroy();
-
+        {
+            Destroy(LiarChooser.Instance.gameObject);
+            LiarChooser.Instance = null;
+        }
         SceneManager.LoadScene(sceneName);
     }
 }

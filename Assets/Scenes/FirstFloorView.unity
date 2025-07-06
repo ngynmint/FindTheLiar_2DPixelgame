@@ -1722,7 +1722,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 178068518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738710603}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &178068518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,7 +2164,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 237688828}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738710603}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &237688828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4074,7 +4098,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 648593349}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738710603}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &648593349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5994,7 +6030,7 @@ GameObject:
   - component: {fileID: 956445057}
   - component: {fileID: 956445056}
   - component: {fileID: 956445055}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: TransitionSceneText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10266,7 +10302,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1589307673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738710603}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1589307673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11525,7 +11573,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1669134835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738710603}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1669134835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12886,7 +12946,7 @@ GameObject:
   - component: {fileID: 1885679876}
   - component: {fileID: 1885679878}
   - component: {fileID: 1885679877}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: TransitionSceneBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

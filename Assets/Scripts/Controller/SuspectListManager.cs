@@ -18,6 +18,10 @@ public class SuspectListManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Start()

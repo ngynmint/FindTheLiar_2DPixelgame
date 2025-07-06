@@ -222,7 +222,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680122674}
+      - m_Target: {fileID: 149977186}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680122674}
+      - m_Target: {fileID: 149977186}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680122674}
+      - m_Target: {fileID: 149977186}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3938,7 +3938,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680122674}
+      - m_Target: {fileID: 149977186}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -9148,7 +9148,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680122674}
+      - m_Target: {fileID: 149977186}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -13394,7 +13394,7 @@ GameObject:
   - component: {fileID: 1927741940}
   - component: {fileID: 1927741939}
   - component: {fileID: 1927741938}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: TransitionSceneText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14014,7 +14014,7 @@ GameObject:
   - component: {fileID: 2100836001}
   - component: {fileID: 2100836003}
   - component: {fileID: 2100836002}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: TransitionSceneBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

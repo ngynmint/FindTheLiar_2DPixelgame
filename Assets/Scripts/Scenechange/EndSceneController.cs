@@ -13,6 +13,10 @@ public class EndSceneController : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void CheckResult(string chosenSuspect)
     {
@@ -31,7 +35,7 @@ public class EndSceneController : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("LoseScene");
+            SceneManager.LoadScene("LostScene");
         }
     }
     public void ResetAndDestroy()
