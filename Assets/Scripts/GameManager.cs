@@ -25,15 +25,31 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void ResetAndDestroy()
+    {
+        Instance = null;
+        Destroy(gameObject);
+    }
+
 
     public void ResetAllNPCStates()
     {
-    foreach (var state in npcStates)
-    {
-        state.hasTalkedToPlayer = false;
-        state.dialogueStep = 0;
-        //state.messageHistory.Clear();
+        foreach (var state in npcStates)
+        {
+            state.hasTalkedToPlayer = false;
+            state.dialogueStep = 0;
+        }
     }
+
+    public void ResetForNewGame()
+    {
+         foreach (var state in npcStates)
+        {
+            state.hasTalkedToPlayer = false;
+            state.dialogueStep = 0;
+            state.messageHistory.Clear();
+        }
+        
     }
 
 

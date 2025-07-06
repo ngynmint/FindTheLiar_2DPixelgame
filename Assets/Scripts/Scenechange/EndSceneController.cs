@@ -1,8 +1,19 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndSceneController : MonoBehaviour
 {
+    public static EndSceneController Instance;
+
+    public void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     public void CheckResult(string chosenSuspect)
     {
         if (LiarChooser.Instance == null)
@@ -16,11 +27,17 @@ public class EndSceneController : MonoBehaviour
 
         if (chosenSuspect == actualLiar)
         {
-            SceneManager.LoadScene("WinScene"); 
+            SceneManager.LoadScene("WinScene");
         }
         else
         {
             SceneManager.LoadScene("LoseScene");
         }
     }
+    public void ResetAndDestroy()
+    {
+        Instance = null;
+        Destroy(gameObject);
+    }
+
 }

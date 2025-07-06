@@ -5,10 +5,20 @@ public class SuspectListManager : MonoBehaviour
     public SuspectIconToggle[] suspectIcons;
 
     [Header("Panels")]
-    public GameObject suspectList;     
-    public GameObject suspectListClickable;    
+    public GameObject suspectList;
+    public GameObject suspectListClickable;
 
+    public static SuspectListManager Instance;
     private bool switched = false;
+
+    public void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -22,7 +32,7 @@ public class SuspectListManager : MonoBehaviour
         {
             SwitchSuspectLists();
         }
-        
+
     }
 
     private void SwitchSuspectLists()
@@ -32,7 +42,7 @@ public class SuspectListManager : MonoBehaviour
         {
             suspectList.SetActive(false);
         }
-        
+
         if (suspectListClickable != null)
         {
             suspectListClickable.SetActive(true);
@@ -46,5 +56,12 @@ public class SuspectListManager : MonoBehaviour
             icon.UpdateIcon();
         }
     }
+    
+    public void ResetAndDestroy()
+    {
+        Instance = null;
+        Destroy(gameObject);
+    }
+
 
 }

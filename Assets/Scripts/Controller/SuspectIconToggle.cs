@@ -17,5 +17,6 @@ public class SuspectIconToggle : MonoBehaviour
 
         iconNotTalkedTo.SetActive(!hasTalked);
         iconTalkedTo.SetActive(hasTalked);
+        
     }
 }

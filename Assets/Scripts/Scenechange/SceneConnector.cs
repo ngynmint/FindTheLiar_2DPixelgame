@@ -14,8 +14,12 @@ public class SceneConnector : MonoBehaviour
     public ScrollRect dialogueScrollRect2;
     public TMP_Text npcTextField2;
     public GameObject player2;
-    public NPC currentNPC2;
+    
+    public TMP_Text doneTalkingTextField2;
+    public GameObject doneTalkingPanel2;
 
+    public GameObject suspectList2;     
+    public GameObject suspectListClickable2;
     void Start()
     {
         if (DialogueManager.Instance != null)
@@ -36,6 +40,10 @@ public class SceneConnector : MonoBehaviour
             nextButtonScene2.GetComponent<Button>().onClick.RemoveAllListeners();
             nextButtonScene2.GetComponent<Button>().onClick.AddListener(DialogueManager.Instance.NextStep);
             DialogueManager.Instance.playerMovement = player2.GetComponent<PlayerMovement>();
+            PlayerProgressTracker.Instance.doneTalkingPanel = doneTalkingPanel2;
+            PlayerProgressTracker.Instance.doneTalkingTextField = doneTalkingTextField2;
+            SuspectListManager.Instance.suspectList = suspectList2;
+            SuspectListManager.Instance.suspectListClickable = suspectListClickable2;
         }
         else
         {

@@ -76,7 +76,7 @@ public class DialogueManager : MonoBehaviour
         currentNPC.dialogueStep = GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep;
         playerMovement.canMove = false;
         talkButton.SetActive(false);
-        if (GameManager.Instance.GetNPCState(currentNPC.npcName).hasTalkedToPlayer ==true)
+        if (GameManager.Instance.GetNPCState(currentNPC.npcName).hasTalkedToPlayer == true)
         {
             currentNPC.dialoguePanel.SetActive(true);
             string response = AlreadyTalkedResponse(currentNPC.npcName);
@@ -88,7 +88,7 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(SendToGroq(""));
         }
         ;
-        
+
     }
 
     private string AlreadyTalkedResponse(string npcName)
@@ -108,6 +108,7 @@ public class DialogueManager : MonoBehaviour
             default:
                 return "We've already talked.";
         }
+
     }
 
     public GameObject ScrollViewPlayer;
@@ -123,6 +124,7 @@ public class DialogueManager : MonoBehaviour
             currentNPC.npcTextField.text = "";
             //dialogueScrollRect.verticalNormalizedPosition = 1f;
 
+            currentNPC.SetIsTalking(false);
             playerPanel.SetActive(true);
             playerInput.text = "";
             ScrollViewPlayer.SetActive(true);
@@ -138,8 +140,8 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    
-    
+
+
     public void OnPlayerConfirm()
     {
         currentNPC.dialogueStep++;
@@ -170,12 +172,13 @@ public class DialogueManager : MonoBehaviour
 
         yield return GroqAIService.Instance.SendMessageToAI(formattedMessages, response =>
         {
+            currentNPC.SetIsTalking(true);
             currentNPC.messageHistory.Add(("assistant", response));
             playerPanel.SetActive(false);
             currentNPC.dialoguePanel.SetActive(true);
             currentNPC.npcNotes.SetActive(true);
             currentNPC.npcTextField.text = "";
-            //dialogueScrollRect.verticalNormalizedPosition = 0f;
+            dialogueScrollRect.verticalNormalizedPosition = 0f;
 
             StartCoroutine(TypewriterEffect(currentNPC.npcTextField, response));
         });
@@ -214,7 +217,7 @@ public class DialogueManager : MonoBehaviour
             currentNPC.dialoguePanel.SetActive(false);
             currentNPC.npcTextField.text = "";
         }
-            
+
     }
 
     void EndDialogue()
@@ -226,5 +229,14 @@ public class DialogueManager : MonoBehaviour
         confirmButton.SetActive(false);
         nextButton.SetActive(false);
         playerMovement.canMove = true;
+        currentNPC.SetIsTalking(false);
+        Debug.Log(PlayerProgressTracker.Instance.AllNPCsTalkedTo());
     }
+
+    public void ResetAndDestroy()
+    {
+        Instance = null;
+        Destroy(gameObject);
+    }
+
 }

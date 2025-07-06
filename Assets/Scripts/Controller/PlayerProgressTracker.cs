@@ -66,6 +66,13 @@ public class PlayerProgressTracker : MonoBehaviour
         doneTalkingPanel.SetActive(false);
     }
 
+    public void ResetAndDestroy()
+    {
+        Instance = null;
+        Destroy(gameObject);
+    }
+
+
     
     
 }

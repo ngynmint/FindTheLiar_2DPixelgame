@@ -8,7 +8,7 @@ public class SuspectButtonHandler : MonoBehaviour, IPointerEnterHandler, IPointe
     public GameObject redXIcon; 
     public string suspectName;
     public GameObject blackBackground;
-    public static TypewriterTrigger typewriterTrigger;
+    public TypewriterTrigger typewriterTrigger;
 
     public void OnPointerEnter(PointerEventData eventData)
     {

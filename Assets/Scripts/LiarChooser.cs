@@ -33,4 +33,11 @@ public class LiarChooser : MonoBehaviour
     {
         return npcName == liarName;
     }
+
+    public void ResetAndDestroy()
+    {
+        Instance = null;
+        Destroy(gameObject);
+    }
+
 }

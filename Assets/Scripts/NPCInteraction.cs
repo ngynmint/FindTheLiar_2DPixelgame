@@ -10,6 +10,8 @@ public class NPC : MonoBehaviour
     public string npcName;
     [TextArea(3, 10)]
     public string systemPrompt;
+    public GameObject idleNPC;
+    public GameObject TalkingNPC;
 
     public GameObject dialoguePanel;
     public TMP_Text npcTextField;
@@ -38,6 +40,14 @@ public class NPC : MonoBehaviour
         }
     }
 
+    public void SetIsTalking(bool isTalking)
+{
+    if (idleNPC != null)
+        idleNPC.SetActive(!isTalking);
+
+    if (TalkingNPC != null)
+        TalkingNPC.SetActive(isTalking);
+}
     public void SaveState()
     {
         var state = GameManager.Instance.GetNPCState(npcName);
