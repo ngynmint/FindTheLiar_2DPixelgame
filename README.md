@@ -21,7 +21,7 @@ The NPCs statement are always tailored to the player's questions as they are con
 - Crosscheck their statements and behaviour with yout notes
 - Once all suspects have been interviewed, select your final choice from the menu
 
-## 🚀 How to Run the WebGL Build
+## How to Run
 
 1. Open the folder `Builds/WebGLBuild/`
 2. Open `index.html` in a WebGL-supported browser (e.g. Chrome or Firefox)

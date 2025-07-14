@@ -227,7 +227,8 @@ i7 `|ár     0©àºmnšµàˆ/¬NtHxç5D@AS˜Su•YÈor     ul;%š#ž¨'u>Ý¶cêí2ŒO¦œÏ‰{@
             Ava Talking Animation                  ¯           !                       BedPlant (1)          °           "                       LiviRack              ±       	      NPCNotes              ²                                  TalkTriggerBox                ³           â                     	          
           
    Main Camera          ¢          W          ×          
-            TransitionSceneText               ´                        SpawnPointController              µ           #                    ì           
+      
+      TransitionSceneText               ´                        SpawnPointController              µ           #                    ì           
    Cat-Sheet_0               ¶           $          í          
    LivingWallTop                 ·           %          î             LiviRigthBottom               £          X                    
       	   
@@ -270,7 +271,8 @@ i7 `|ár     0©àºmnšµàˆ/¬NtHxç5D@AS˜Su•YÈor     ul;%š#ž¨'u>Ý¶cêí2ŒO¦œÏ‰{@
       Oliver                ×           
           @             Ava           Ã          B          A      	       Content               Ä          s          D          C      	      ScrollViewPlayer           Å          t          E      	   
    DialogueBox            Æ          u          F      
-       AvaGray                Ç          v          G            TransitionSceneBackground              Ø           ú             LivingRoomWalls           Ù           5             LiviDoor          Ú           6          û             KicthenWallleft               Û           H             QuitController            È          w          J          I      
+       AvaGray                Ç          v          G      
+      TransitionSceneBackground              Ø           ú             LivingRoomWalls           Ù           5             LiviDoor          Ú           6          û             KicthenWallleft               Û           H             QuitController            È          w          J          I      
    
    QuitButton                É          x          M          L          K      	      Viewport              Ê          O          N      	       Content               Ü                     P             QuittingMenuTrigger           Ë          y          Q      
       Noah          Ý           7          ü             LiviRigthBotto                Þ           R          

@@ -34,6 +34,14 @@ public class DialogueManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
+    private void Update()
+{
+    if (playerPanel.activeSelf && playerInput.isFocused && Input.GetKeyDown(KeyCode.Return))
+    {
+        OnPlayerConfirm();
+    }
+}
+
 
     private void Start()
     {
@@ -191,21 +199,28 @@ public class DialogueManager : MonoBehaviour
     {
         textComp.text = "";
         yield return null;
+        Debug.Log("Content height before: " + dialogueScrollRect.content.rect.height);
+        Debug.Log("Viewport height before: " + dialogueScrollRect.viewport.rect.height);
 
         for (int i = 0; i < fullText.Length; i++)
         {
             textComp.text += fullText[i];
+
             Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(npcTextField.rectTransform);
+
+            dialogueScrollRect.verticalNormalizedPosition = 0f;
 
             yield return new WaitForSeconds(0.02f);
         }
-        Canvas.ForceUpdateCanvases();
-        dialogueScrollRect.verticalNormalizedPosition = 0f;
-        Debug.Log("Typing done");
+        Debug.Log("Content height after: " + dialogueScrollRect.content.rect.height);
+        Debug.Log("Viewport height after: " + dialogueScrollRect.viewport.rect.height);
 
         yield return null;
         Canvas.ForceUpdateCanvases();
-        //dialogueScrollRect.verticalNormalizedPosition = 0f;
+        LayoutRebuilder.ForceRebuildLayoutImmediate(npcTextField.rectTransform);
+
+        Debug.Log("Typing done.");
 
         if (currentNPC.dialogueStep < 5)
         {
