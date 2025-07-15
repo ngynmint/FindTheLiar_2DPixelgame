@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite PlayerFront_Idle;
     public Sprite PlayerBack_Idle;
     public Sprite PlayerMoveLeft;
+    public AudioSource walkingAudio;
 
 
     private SpriteRenderer spriteRenderer;
@@ -26,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         if (!canMove)
             return;
 
-            
+
         Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         transform.Translate(move * 6f * Time.deltaTime);
 
@@ -38,5 +39,16 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.sprite = PlayerBack_Idle;
         else if (move.y < 0)
             spriteRenderer.sprite = PlayerFront_Idle;
+            if (move != Vector2.zero)
+
+        {
+            if (!walkingAudio.isPlaying)
+                walkingAudio.Play();
+        }
+        else
+        {
+            if (walkingAudio.isPlaying)
+                walkingAudio.Stop();
+        }
     }
 }

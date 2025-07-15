@@ -93,6 +93,10 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            if (currentNPC.dialogueAudio != null)
+            {
+                currentNPC.dialogueAudio.Play();
+            }
             StartCoroutine(SendToGroq(""));
         }
         ;
@@ -202,6 +206,12 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Content height before: " + dialogueScrollRect.content.rect.height);
         Debug.Log("Viewport height before: " + dialogueScrollRect.viewport.rect.height);
 
+        if (currentNPC.dialogueAudio != null)
+        {
+            currentNPC.dialogueAudio.Play();
+        }
+
+
         for (int i = 0; i < fullText.Length; i++)
         {
             textComp.text += fullText[i];
@@ -215,7 +225,12 @@ public class DialogueManager : MonoBehaviour
         }
         Debug.Log("Content height after: " + dialogueScrollRect.content.rect.height);
         Debug.Log("Viewport height after: " + dialogueScrollRect.viewport.rect.height);
+        currentNPC.SetIsTalking(false);
 
+        if (currentNPC.dialogueAudio != null && currentNPC.dialogueAudio.isPlaying)
+        {
+            currentNPC.dialogueAudio.Stop();
+        }
         yield return null;
         Canvas.ForceUpdateCanvases();
         LayoutRebuilder.ForceRebuildLayoutImmediate(npcTextField.rectTransform);
@@ -230,6 +245,10 @@ public class DialogueManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1.5f);
             currentNPC.dialoguePanel.SetActive(false);
+            if (currentNPC.dialogueAudio != null && currentNPC.dialogueAudio.isPlaying)
+            {
+                currentNPC.dialogueAudio.Stop();
+            }
             currentNPC.npcTextField.text = "";
         }
 

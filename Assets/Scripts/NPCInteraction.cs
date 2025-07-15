@@ -16,6 +16,8 @@ public class NPC : MonoBehaviour
     public GameObject dialoguePanel;
     public TMP_Text npcTextField;
     public GameObject npcNotes;
+    public AudioSource dialogueAudio;
+
 
     [HideInInspector] public List<(string role, string content)> messageHistory = new();
 
