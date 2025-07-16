@@ -1,4 +1,4 @@
-### Find The Liar  
+# Find The Liar  
 
 
 ## Description  
@@ -22,16 +22,16 @@ Notessheet: tianzart on vecteezy via https://www.vecteezy.com/vector-art/3595603
 Startscreen: AI-generated on https://www.pixellab.ai  
 Others: Minh Thi Nguyen  
 
-# Font:  
+### Font:  
 Pixel Operator by Jayvee Enaguas via https://www.dafont.com/pixel-operator.font  
 
-# Sounds:  
+### Sounds:  
 NPC Sounds: Pixabay.com (Oliver, Mia, Ava, Chloe), Freesound.org (Noah)  
 Backgroundmusic: "honey lemon tea" by Stream Cafe on Spotify  
 Walking Sound:Pixabay.com  
 Victory/Defeat Sound: mixkit.co  
 
-# Gamedesign and Development:  
+### Gamedesign and Development:  
 Minh Thi Nguyen  
 Created as part of the course SS25 Multimediaprogramming at LMU
 
