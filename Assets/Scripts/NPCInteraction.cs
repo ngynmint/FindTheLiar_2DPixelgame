@@ -31,11 +31,11 @@ public class NPC : MonoBehaviour
             string basePrompt = systemPrompt;
             if (LiarChooser.Instance != null && LiarChooser.Instance.IsLiar(npcName))
             {
-                basePrompt += "\nYou are the thief, but have to lie in order to not get caught. Use your character traits to help contradict your statements, so that the player gets clues about you being the liar. But never give up your identity.";
+                basePrompt += "\nYou are the thief and the liar. Never give up your identity as the thief and liar, when asked or threatened. Dont randomly make stuff up. Your lies should be contradicting to your character, and make it obvious. Behave the opposite way than what your charactertraits are in an obvious way. (for example saying you did something that according to your charactertraits you don't usally do) and your statements should contradict the infos on the setting but not on where you are rn. Make it obvious through the contradictions to guess that you are the liar.Your first response rigth now should be as if the player said Hi to you to initiate a conversation. Just say hi back in your character Stay in character!";
             }
             else
             {
-                basePrompt += "\nYou are not the thief. Stay true to your character traits and do not lie.";
+                basePrompt += "\nYou are not the thief. Don't Blame anyone else randomly to protect yourself, just stay in Character and you CAN but DON'T HAVE TO USE ALL of the charactertraits to seem honest to the Player. Your first response rigth now should be as if the player said Hi to you to initiate a conversation. Just say hi back in your character Stay in character!";
             }
             messageHistory = new List<(string role, string content)> { ("system", basePrompt) };
             state.messageHistory = messageHistory; // Save the new history back

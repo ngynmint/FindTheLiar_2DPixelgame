@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 25564172}
   - component: {fileID: 25564171}
   - component: {fileID: 25564170}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 71734809}
   - component: {fileID: 71734811}
   - component: {fileID: 71734810}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Chloe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,7 @@ GameObject:
   - component: {fileID: 122781044}
   - component: {fileID: 122781046}
   - component: {fileID: 122781045}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: SuspectlistClickable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +1782,7 @@ GameObject:
   - component: {fileID: 145620657}
   - component: {fileID: 145620659}
   - component: {fileID: 145620658}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: HowToPlayPanelMenu (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1806,7 +1806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -0.00012207031}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: -979.10815, y: -551.0641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145620658
@@ -1858,7 +1858,7 @@ GameObject:
   - component: {fileID: 168300820}
   - component: {fileID: 168300822}
   - component: {fileID: 168300821}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Noah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1935,7 +1935,7 @@ GameObject:
   - component: {fileID: 178068518}
   - component: {fileID: 178068517}
   - component: {fileID: 178068520}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Chloe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2398,7 @@ GameObject:
   - component: {fileID: 230693365}
   - component: {fileID: 230693367}
   - component: {fileID: 230693366}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: OliverGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2475,7 +2475,7 @@ GameObject:
   - component: {fileID: 237688828}
   - component: {fileID: 237688827}
   - component: {fileID: 237688830}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2669,7 +2669,7 @@ GameObject:
   - component: {fileID: 272648990}
   - component: {fileID: 272648992}
   - component: {fileID: 272648991}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: AvaGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 310563754}
   - component: {fileID: 310563753}
   - component: {fileID: 310563752}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3148,7 +3148,7 @@ GameObject:
   - component: {fileID: 314801284}
   - component: {fileID: 314801286}
   - component: {fileID: 314801285}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: CrossChloe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3358,7 +3358,7 @@ GameObject:
   - component: {fileID: 329399391}
   - component: {fileID: 329399393}
   - component: {fileID: 329399392}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: CrossAva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3751,7 +3751,7 @@ GameObject:
   - component: {fileID: 407197577}
   - component: {fileID: 407197579}
   - component: {fileID: 407197578}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Mia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4021,7 +4021,7 @@ GameObject:
   - component: {fileID: 447378817}
   - component: {fileID: 447378819}
   - component: {fileID: 447378818}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4095,7 +4095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 479186448}
   - component: {fileID: 479186449}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Noah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4183,7 +4183,7 @@ GameObject:
   - component: {fileID: 507679818}
   - component: {fileID: 507679820}
   - component: {fileID: 507679819}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: OliverGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4258,7 +4258,7 @@ GameObject:
   - component: {fileID: 517152139}
   - component: {fileID: 517152141}
   - component: {fileID: 517152140}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: MiaGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4333,7 +4333,7 @@ GameObject:
   - component: {fileID: 529930937}
   - component: {fileID: 529930939}
   - component: {fileID: 529930938}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: SuspectlistVisible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4632,7 +4632,7 @@ GameObject:
   - component: {fileID: 640292844}
   - component: {fileID: 640292843}
   - component: {fileID: 640292842}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: NotesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4789,7 +4789,7 @@ GameObject:
   - component: {fileID: 648593349}
   - component: {fileID: 648593348}
   - component: {fileID: 648593351}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Mia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5184,7 +5184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748178404}
   - component: {fileID: 748178405}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Mia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5238,7 +5238,7 @@ GameObject:
   - component: {fileID: 758483640}
   - component: {fileID: 758483642}
   - component: {fileID: 758483641}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: CrossOliver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5440,7 +5440,7 @@ GameObject:
   - component: {fileID: 766212237}
   - component: {fileID: 766212236}
   - component: {fileID: 766212235}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: OkButtonHTPMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5660,7 +5660,7 @@ GameObject:
   - component: {fileID: 787135856}
   - component: {fileID: 787135858}
   - component: {fileID: 787135857}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: NoahGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6176,7 +6176,7 @@ GameObject:
   - component: {fileID: 860825294}
   - component: {fileID: 860825296}
   - component: {fileID: 860825295}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MiaGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6727,7 +6727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906848272}
   - component: {fileID: 906848273}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Chloe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7209,7 +7209,7 @@ GameObject:
   - component: {fileID: 999429739}
   - component: {fileID: 999429741}
   - component: {fileID: 999429740}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: NoahGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7828,31 +7828,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1045654208}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: StartDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OliverInteraction, Assembly-CSharp
-        m_MethodName: OnTalkPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1045654208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8147,7 +8123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089255404}
   - component: {fileID: 1089255405}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Oliver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8339,7 +8315,7 @@ GameObject:
   - component: {fileID: 1126936997}
   - component: {fileID: 1126936996}
   - component: {fileID: 1126936995}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: HowToPlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8616,7 +8592,7 @@ GameObject:
   - component: {fileID: 1131277963}
   - component: {fileID: 1131277965}
   - component: {fileID: 1131277964}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: GeneralNotes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8917,7 +8893,7 @@ GameObject:
   - component: {fileID: 1194120899}
   - component: {fileID: 1194120901}
   - component: {fileID: 1194120900}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Suspectlist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9112,7 +9088,7 @@ GameObject:
   - component: {fileID: 1211919583}
   - component: {fileID: 1211919585}
   - component: {fileID: 1211919584}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Chloe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9328,6 +9304,64 @@ Transform:
   - {fileID: 1494041590}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1233065232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1233065234}
+  - component: {fileID: 1233065233}
+  m_Layer: 0
+  m_Name: SceneConnector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1233065233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233065232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc40afeaa98dfe4fa9fdcad4087e4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInputScene1: {fileID: 1482843710}
+  playerPanelScene1: {fileID: 1622949344}
+  talkButtonScene1: {fileID: 1045654205}
+  confirmButtonScene1: {fileID: 1213671845}
+  nextButtonScene1: {fileID: 1794910920}
+  ScrollViewPlayer1: {fileID: 1850189911}
+  dialogueScrollRect1: {fileID: 95383637}
+  npcTextField1: {fileID: 111745689}
+  doneTalkingTextField1: {fileID: 826756516}
+  doneTalkingPanel1: {fileID: 1435723735}
+  player1: {fileID: 198348465}
+  suspectList1: {fileID: 1194120898}
+  suspectListClickable1: {fileID: 122781043}
+  suspectListPanel1: {fileID: 529930936}
+--- !u!4 &1233065234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233065232}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 140.22363, y: 54.16711, z: -0.57518643}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1260277792
 GameObject:
   m_ObjectHideFlags: 0
@@ -9370,7 +9404,7 @@ GameObject:
   - component: {fileID: 1266131400}
   - component: {fileID: 1266131402}
   - component: {fileID: 1266131401}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: CrossMia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9485,6 +9519,7 @@ MonoBehaviour:
   playerInput: {fileID: 1482843710}
   player: {fileID: 198348465}
   playerMovement: {fileID: 0}
+  suspectListPanel: {fileID: 529930936}
   ScrollViewPlayer: {fileID: 1850189911}
   npcTextField: {fileID: 111745689}
   dialogueScrollRect: {fileID: 95383637}
@@ -9884,7 +9919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1297096617}
   - component: {fileID: 1297096618}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Oliver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10072,7 +10107,7 @@ GameObject:
   - component: {fileID: 1317345226}
   - component: {fileID: 1317345228}
   - component: {fileID: 1317345227}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: ChloeGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10147,7 +10182,7 @@ GameObject:
   - component: {fileID: 1324722246}
   - component: {fileID: 1324722248}
   - component: {fileID: 1324722247}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: ChloeGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10307,7 +10342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1376734491}
   - component: {fileID: 1376734492}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Mia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10361,7 +10396,7 @@ GameObject:
   - component: {fileID: 1384197687}
   - component: {fileID: 1384197689}
   - component: {fileID: 1384197688}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10494,7 +10529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391911442}
   - component: {fileID: 1391911443}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10973,11 +11008,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 145620657}
   - {fileID: 890071281}
   - {fileID: 1498554676}
   - {fileID: 1566263968}
   - {fileID: 1738710604}
+  - {fileID: 145620657}
   - {fileID: 1885679876}
   - {fileID: 1435723738}
   m_Father: {fileID: 1216794818}
@@ -11452,7 +11487,7 @@ GameObject:
   - component: {fileID: 1589307673}
   - component: {fileID: 1589307672}
   - component: {fileID: 1589307675}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Noah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12275,7 +12310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650095758}
   - component: {fileID: 1650095759}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12329,7 +12364,7 @@ GameObject:
   - component: {fileID: 1654762928}
   - component: {fileID: 1654762930}
   - component: {fileID: 1654762929}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12667,7 +12702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667858730}
   - component: {fileID: 1667858731}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Chloe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12723,7 +12758,7 @@ GameObject:
   - component: {fileID: 1669134835}
   - component: {fileID: 1669134834}
   - component: {fileID: 1669134837}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Oliver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12871,7 +12906,7 @@ GameObject:
   - component: {fileID: 1675029786}
   - component: {fileID: 1675029788}
   - component: {fileID: 1675029787}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: CrossNoah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12947,7 +12982,7 @@ GameObject:
   - component: {fileID: 1684313335}
   - component: {fileID: 1684313334}
   - component: {fileID: 1684313336}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13041,7 +13076,7 @@ GameObject:
   - component: {fileID: 1691588408}
   - component: {fileID: 1691588407}
   - component: {fileID: 1691588406}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: OkayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13184,7 +13219,7 @@ GameObject:
   - component: {fileID: 1697241851}
   - component: {fileID: 1697241853}
   - component: {fileID: 1697241852}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Mia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13301,7 +13336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1738710604}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13446,21 +13481,27 @@ MonoBehaviour:
     stay in character and never reveal that you are an AI or that this is a simulation.
     \r\nDo not provide summaries, reasoning, or explain your choices. Never break
     character. Respond only with what your character would actually say, directly
-    and naturally, with no commentary or thinking.\r\nAlways answer in a max of 3
-    sentences.\r\nYour Name is Oliver you're a partyguest at a houseparty with Noah,
-    Mia, Chloe and Ava. \r\nThere was a ring that got stolen at 12am and it is currently
-    1am. You do not try to solve the mystery but are questioned by the Player and
-    have to answer him in Character. More info on the Setting: the ring got stolen
-    on the 2nd Floor, you are on the first Floor in the kitchen, while Right now
-    Ava is on the 1st Floor livingroom with a cat, Mia and Chloe in the upstairs
-    bedroom and Noah in the upstairs bathroom. All the Windows were closed in the
+    and naturally, with no commentary or thinking and do not roleplay with ** like
+    *blushes* and dont answer in \"\".\r\nAlways answer in a max of 3 sentences.\r\nYour
+    Name is Oliver you're a partyguest at the player's houseparty with Noah, Mia,
+    Chloe and Ava and the Player (the one whos Talking to you). The Player does not
+    have a Name, so never refer to the persontalking to you witrh a Name, only say
+    you.   \r\n\r\nGeneral Notes: There was a ring that got stolen at 12am and it
+    is currently 1am. You do not try to solve the mystery but are questioned by the
+    Player and have to answer him in Character. \r\nMore info on the Setting: the
+    ring got stolen on the 2nd Floor, you are on the first Floor in the kitchen,
+    while Right now Ava is on the 1st Floor livingroom with a cat, Mia and Chloe
+    in the upstairs bedroom and Noah in the upstairs bathroom. You don't really know
+    where everyone else was before right now, except that at one point you heard
+    Chloe and Noah had an Argument upstairs.\r\nAll the Windows were closed in the
     whole house at time of the rings disappearance. Also there was no alcohol left
-    past 9pm.\r\nYou heard Chloe and Noah having an Argument upstairs at one Point.\r\nYour
-    charactertraits are: quiet and observative, you do not smoke and, you get embarassed
-    really fast and hate doing Things in front of other People and in General being
-    the Center of Attention, you are very Logical and objective.\r\nYour first response
-    rigth now should be as if the player said Hi to you to initiate a conversation.
-    Stay in character!\r\n\n"
+    past 9pm.\r\nYou're in the kitchen, there's nothing rlly right now in the kitchen,
+    no alcohol, no fridge, but there's water and there's a stove where you could
+    make yourself a sandwich for example.\r\n\r\nYour charactertraits are: quiet
+    and observative, you do not smoke and, hate doing Things in front of other People
+    and in General being the Center of Attention (for example you wouldn't dance
+    in front of other people), you are very Logical and objective. dont answer in
+    roleplay ** like *blushes*"
   idleNPC: {fileID: 1663489256}
   TalkingNPC: {fileID: 2026081434}
   dialoguePanel: {fileID: 855158981}
@@ -13573,7 +13614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768861976}
   - component: {fileID: 1768861977}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Noah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13797,7 +13838,7 @@ GameObject:
   - component: {fileID: 1805483227}
   - component: {fileID: 1805483229}
   - component: {fileID: 1805483228}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Oliver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13951,23 +13992,23 @@ MonoBehaviour:
     stay in character and never reveal that you are an AI or that this is a simulation.
     \r\nDo not provide summaries, reasoning, or explain your choices. Never break
     character. Respond only with what your character would actually say, directly
-    and naturally, with no commentary or thinking.\r\nAlways answer in a max of 3
-    sentences.\r\n\r\nYour Character:\r\nYour Name is Ava and you're a partyguest
-    at a houseparty with Noah, Mia, Chloe and Oliver. \r\n\r\nThere was a ring that
-    got stolen at 12am and it is currently 1am. You do not try to solve the mystery
-    but are questioned by the Player and have to answer him in Character. More info
-    on the Setting: the ring got stolen on the 2nd Floor, you are on the first Floor
-    in the livingroom, while Right now Oliver is on the 1st Floor kitchen, Mia and
-    Chloe in the upstairs bedroom and Noah in the upstairs bathroom. All the Windows
-    were closed in the whole house at time of the rings disappearance. Also there
-    was no alcohol left past 9pm.\r\nYou heard Chloe and Noah having an Argument
-    upstairs at one Point.\r\nYour charactertraits are: very confident and sarcastic,
-    Blames others a lot, goes outside a lot to smoke, you got to the Party late past
-    9pm so you didnt have any alcohol. \r\n[You are not the thief. Don't Blame anyone
-    else randomly to protect yourself, just stay in Character and you CAN but don't
-    have to use ALL of the charactertraits to seem honest to the Player.]\nYour first
-    response rigth now should be as if the player said Hi to you to initiate a conversation.
-    Stay in character!\r\n"
+    and naturally, with no commentary or thinking and do not roleplay with ** like
+    *blushes* and dont answer in \"\".\r\nAlways answer in a max of 3 sentences.\r\nYour
+    Name is Ava and you're a partyguest at the player's houseparty with Noah, Mia,
+    Chloe and Oliver and the Player (the one whos Talking to you). The Player does
+    not have a Name, so never refer to the persontalking to you witrh a Name, only
+    say you.  \r\nGeneral Notes: A ring got stolen at 12am and it is currently 1am.
+    You do not try to solve the mystery but are questioned by the Player and have
+    to answer him in Character. \r\nMore info on the Setting: the ring got stolen
+    on the 2nd Floor. RIGHT NOW you are on the first Floor in the livingroom (there's,
+    while right now Oliver is on the 1st Floor kitchen, Mia and Chloe in the upstairs
+    bedroom and Noah in the upstairs bathroom. You don't really know where everyone
+    else was before right now, except that at one point you heard Chloe and Noah
+    had an Argument upstairs.\r\nAll the Windows were closed in the whole house at
+    time of the rings disappearance, so it must have been one of the People present.
+    Also there was no alcohol left past 9pm.\r\nYour charactertraits are: very confident
+    and sarcastic, Blames others a lot, goes outside a lot to smoke, you got to the
+    Party late past 9pm so you didnt have any alcohol. \r\n"
   idleNPC: {fileID: 282291368}
   TalkingNPC: {fileID: 899439937}
   dialoguePanel: {fileID: 1858456095}
@@ -14342,7 +14383,7 @@ GameObject:
   - component: {fileID: 1872958999}
   - component: {fileID: 1872959001}
   - component: {fileID: 1872959000}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: AvaGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15114,7 +15155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000004053116}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: -5.6674805, y: 128.2978}
   m_Pivot: {x: 5, y: 1}
 --- !u!114 &1974426913
@@ -15260,7 +15301,7 @@ GameObject:
   - component: {fileID: 2014723530}
   - component: {fileID: 2014723532}
   - component: {fileID: 2014723531}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Noah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15514,7 +15555,7 @@ GameObject:
   - component: {fileID: 2025059625}
   - component: {fileID: 2025059627}
   - component: {fileID: 2025059626}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: HowToPlayPanelMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15697,7 +15738,7 @@ GameObject:
   - component: {fileID: 2031783540}
   - component: {fileID: 2031783539}
   - component: {fileID: 2031783538}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Menubutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16264,7 +16305,7 @@ GameObject:
   - component: {fileID: 2098634821}
   - component: {fileID: 2098634823}
   - component: {fileID: 2098634822}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Oliver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16340,7 +16381,7 @@ GameObject:
   - component: {fileID: 2105634184}
   - component: {fileID: 2105634183}
   - component: {fileID: 2105634185}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16690,3 +16731,4 @@ SceneRoots:
   - {fileID: 1465210521}
   - {fileID: 860762074}
   - {fileID: 36868744}
+  - {fileID: 1233065234}

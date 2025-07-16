@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
 
     [Header("UI References")]
     public GameObject talkButton;
+    private Coroutine currentTypingCoroutine;
+
     public GameObject confirmButton;
     public GameObject nextButton;
 
@@ -21,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject player;
     [HideInInspector]
     public PlayerMovement playerMovement;
+    public GameObject suspectListPanel;
 
     private NPC currentNPC;
 
@@ -42,19 +45,29 @@ public class DialogueManager : MonoBehaviour
     }
 }
 
-
-    private void Start()
-    {
+public void InitializeDialogueUI()
+{
+    if (player != null)
         playerMovement = player.GetComponent<PlayerMovement>();
-        talkButton.SetActive(false);
-        confirmButton.SetActive(false);
-        nextButton.SetActive(false);
-        playerPanel.SetActive(false);
 
+    if (talkButton != null)
+    {
+        talkButton.SetActive(false);
+        talkButton.GetComponent<Button>().onClick.RemoveAllListeners();
         talkButton.GetComponent<Button>().onClick.AddListener(OnTalk);
-        confirmButton.GetComponent<Button>().onClick.AddListener(OnPlayerConfirm);
-        //nextButton.GetComponent<Button>().onClick.AddListener(NextStep);
     }
+
+    if (confirmButton != null)
+    {
+        confirmButton.SetActive(false);
+        confirmButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        confirmButton.GetComponent<Button>().onClick.AddListener(OnPlayerConfirm);
+    }
+
+    if (playerPanel != null)
+        playerPanel.SetActive(false);
+}
+
 
     public void SetCurrentNPC(NPC npc)
     {
@@ -81,11 +94,13 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        suspectListPanel.SetActive(false);
         currentNPC.dialogueStep = GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep;
         playerMovement.canMove = false;
         talkButton.SetActive(false);
         if (GameManager.Instance.GetNPCState(currentNPC.npcName).hasTalkedToPlayer == true)
         {
+            dialogueScrollRect.verticalNormalizedPosition = 1f;
             currentNPC.dialoguePanel.SetActive(true);
             string response = AlreadyTalkedResponse(currentNPC.npcName);
             StartCoroutine(TypewriterEffect(currentNPC.npcTextField, response));
@@ -114,7 +129,7 @@ public class DialogueManager : MonoBehaviour
             case "Chloe":
                 return "Thank you for your efforts to find the ring, we really appreciate it!";
             case "Ava":
-                return "Still haven't found the thief, Sherlock?.";
+                return "Still haven't found the thief, Sherlock?";
             case "Oliver":
                 return "I haven't seen anything else.";
             default:
@@ -130,11 +145,11 @@ public class DialogueManager : MonoBehaviour
         Debug.Log(currentNPC.dialogueStep);
         GameManager.Instance.GetNPCState(currentNPC.npcName).dialogueStep = currentNPC.dialogueStep;
 
-        if (currentNPC.dialogueStep == 1 || currentNPC.dialogueStep == 3)
+        if (currentNPC.dialogueStep == 1 || currentNPC.dialogueStep == 3 || currentNPC.dialogueStep == 5)
         {
             currentNPC.dialoguePanel.SetActive(false);
             currentNPC.npcTextField.text = "";
-            //dialogueScrollRect.verticalNormalizedPosition = 1f;
+            dialogueScrollRect.verticalNormalizedPosition = 1f;
 
             currentNPC.SetIsTalking(false);
             playerPanel.SetActive(true);
@@ -143,7 +158,7 @@ public class DialogueManager : MonoBehaviour
             playerInput.ActivateInputField();
             confirmButton.SetActive(true);
         }
-        else if (currentNPC.dialogueStep == 5)
+        else if (currentNPC.dialogueStep == 7)
         {
             GameManager.Instance.GetNPCState(currentNPC.npcName).hasTalkedToPlayer = true;
             EndDialogue();
@@ -189,6 +204,8 @@ public class DialogueManager : MonoBehaviour
             playerPanel.SetActive(false);
             currentNPC.dialoguePanel.SetActive(true);
             currentNPC.npcNotes.SetActive(true);
+             if (currentTypingCoroutine != null)
+            StopCoroutine(currentTypingCoroutine);
             currentNPC.npcTextField.text = "";
             dialogueScrollRect.verticalNormalizedPosition = 0f;
 
@@ -219,7 +236,7 @@ public class DialogueManager : MonoBehaviour
             Canvas.ForceUpdateCanvases();
             LayoutRebuilder.ForceRebuildLayoutImmediate(npcTextField.rectTransform);
 
-            dialogueScrollRect.verticalNormalizedPosition = 0f;
+            //dialogueScrollRect.verticalNormalizedPosition = 0f;
 
             yield return new WaitForSeconds(0.02f);
         }
@@ -237,7 +254,7 @@ public class DialogueManager : MonoBehaviour
 
         Debug.Log("Typing done.");
 
-        if (currentNPC.dialogueStep < 5)
+        if (currentNPC.dialogueStep < 7)
         {
             nextButton.SetActive(true);
         }
@@ -256,6 +273,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        Debug.Log("reched");
         currentNPC.dialoguePanel.SetActive(false);
         currentNPC.npcTextField.text = "";
         playerPanel.SetActive(false);
@@ -264,6 +282,7 @@ public class DialogueManager : MonoBehaviour
         nextButton.SetActive(false);
         playerMovement.canMove = true;
         currentNPC.SetIsTalking(false);
+        suspectListPanel.SetActive(true);
         Debug.Log(PlayerProgressTracker.Instance.AllNPCsTalkedTo());
     }
 

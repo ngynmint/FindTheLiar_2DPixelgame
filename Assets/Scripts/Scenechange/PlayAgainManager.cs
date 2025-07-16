@@ -43,6 +43,12 @@ public class PlayAgainManager : MonoBehaviour
             Destroy(LiarChooser.Instance.gameObject);
             LiarChooser.Instance = null;
         }
+
+        if (BackgroundMusic.Instance != null)
+        {
+            Destroy(BackgroundMusic.Instance.gameObject);
+            BackgroundMusic.Instance = null;
+        }
         SceneManager.LoadScene(sceneName);
     }
 }
