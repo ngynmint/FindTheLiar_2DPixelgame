@@ -15,7 +15,8 @@ Text-generated Bot used: Model llama-3.1-8b-instant via https://console.groq.com
 - Once all suspects have been interviewed, select your final choice from the menu
 
 ## Credits  
-Sprites:  
+
+### Sprites:  
 House Interior: zedpxl on itch.io via https://zedpxl.itch.io/pixel-16-interiors-topdown-pixelart-asset-pack  
 Cat: ToffeeCraft on itch.io via https://toffeecraft.itch.io/cat-pack  
 Notessheet: tianzart on vecteezy via https://www.vecteezy.com/vector-art/35956036-note-paper-pixel-art-vector-illustration  
