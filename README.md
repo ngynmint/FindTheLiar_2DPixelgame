@@ -6,14 +6,7 @@ FInd The Liar is a 2D UNity Pixelgame with a short mystery story plot. The playe
 The player has to talk to all suspects, compare their statements and behaviour to his notes and make a final decision on who the culprit is. 
 The NPCs statement are always tailored to the player's questions as they are connected to an AI-generated dialogue bot. 
 
-## 🧱 Project Structure
-
-- `Assets/` — All game assets including scripts, scenes, prefabs, and UI
-- `Builds/WebGLBuild/` — Contains the WebGL build of the game (can be played in browser)
-- `README.md` — This file
-- `Fragen.txt` — questions or feedback requests
-
-## 🛠️ How to Play
+## How to Play
 
 - Use **WASD / Arrow Keys** to move the detective
 - Approach NPCs and press **Talk** to start a conversation
@@ -21,8 +14,26 @@ The NPCs statement are always tailored to the player's questions as they are con
 - Crosscheck their statements and behaviour with yout notes
 - Once all suspects have been interviewed, select your final choice from the menu
 
-## How to Run
+## Credits
+Sprites:
 
-1. Open the folder `Builds/WebGLBuild/`
-2. Open `index.html` in a WebGL-supported browser (e.g. Chrome or Firefox)
+House Interior: zedpxl on itch.io via https://zedpxl.itch.io/pixel-16-interiors-topdown-pixelart-asset-pack
+Cat: ToffeeCraft on itch.io via https://toffeecraft.itch.io/cat-pack
+Notessheet: tianzart on vecteezy via https://www.vecteezy.com/vector-art/35956036-note-paper-pixel-art-vector-illustration
+Startscreen: AI-generated on https://www.pixellab.ai
+Characters: Minh Thi Nguyen
+Others: Minh Thi Nguyen
+
+Font:
+Pixel Operator by Jayvee Enaguas via https://www.dafont.com/pixel-operator.font
+
+Sounds:
+NPC Sounds: Pixabay.com (Oliver, Mia, Ava, Chloe), Freesound.org (Noah)
+Backgroundmusic: "honey lemon tea" by Stream Cafe on Spotify
+Walking Sound:Pixabay.com
+Victory/Defeat Sound: mixkit.co 
+
+Gamedesign and Development: Minh Thi Nguyen 
+Created as part of the course SS25 Multimediaprogramming at LMU
+
 
