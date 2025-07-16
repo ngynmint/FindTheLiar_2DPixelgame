@@ -3412,8 +3412,8 @@ RectTransform:
   m_Children:
   - {fileID: 1781655233}
   - {fileID: 688034604}
-  - {fileID: 149977187}
   - {fileID: 1866191742}
+  - {fileID: 149977187}
   - {fileID: 2100836001}
   m_Father: {fileID: 629000225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7123,8 +7123,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d44b5fb879c245c468fb58b5d0882560, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.37
-  m_Pitch: 1
+  m_Volume: 0.282
+  m_Pitch: 0.75
   Loop: 1
   Mute: 0
   Spatialize: 0

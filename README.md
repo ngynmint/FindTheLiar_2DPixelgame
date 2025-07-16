@@ -11,7 +11,7 @@ Text-generated Bot used: Model llama-3.1-8b-instant via https://console.groq.com
 - Use **WASD / Arrow Keys** to move the detective
 - Approach NPCs and press **Talk** to start a conversation
 - Engage in dialogue and respond using the input field
-- Crosscheck their statements and behaviour with yout notes
+- Crosscheck their statements and behaviour with your notes
 - Once all suspects have been interviewed, select your final choice from the menu
 
 ## Credits  
