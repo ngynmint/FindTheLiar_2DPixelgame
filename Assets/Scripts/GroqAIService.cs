@@ -41,7 +41,7 @@ public class GroqAIService : MonoBehaviour
     {
         public string model;
         public List<ChatMessage> messages;
-        //public float temperature = 0.7f; to control creativeness scale if needed? test?
+        public float temperature = 0.7f; //to control creativeness scale if needed? test?
 
         /*
         * Creates new Chat with model and message history
