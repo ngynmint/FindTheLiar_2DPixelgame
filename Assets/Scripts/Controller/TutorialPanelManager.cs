@@ -4,9 +4,11 @@ public class TutorialPanelManager : MonoBehaviour
 {
     public GameObject tutorialPanel;
 
-    // Static variable = shared across all instances, and resets when the game restarts
     private static bool hasSeenTutorialThisSession = false;
 
+    /*
+    * Displays a tutorial panel on first time playing the game and ensures, it only pops up once.
+    */
     private void Start()
     {
         if (!hasSeenTutorialThisSession)

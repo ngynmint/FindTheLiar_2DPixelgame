@@ -20,16 +20,16 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    /*
+    * Controlls player's speed, sprite changes while walking and audio
+    */
     void Update()
-
     {
         if (!canMove)
             return;
 
-
         Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        transform.Translate(move * 6f * Time.deltaTime);
+        transform.Translate(move * 7f * Time.deltaTime);
 
         if (move.x > 0)
             spriteRenderer.sprite = PlayerMoveRight;

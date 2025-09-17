@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class SuspectListManager : MonoBehaviour
 {
-    public SuspectIconToggle[] suspectIcons;
+    public SuspectIconToggle[] suspectIcons; //array of suspect icons to update
 
     [Header("Panels")]
-    public GameObject suspectList;
+    public GameObject suspectList; 
     public GameObject suspectListClickable;
 
     public static SuspectListManager Instance;
-    private bool switched = false;
+    private bool switched = false; // so that the suspectlist doesn't swap back anymore, once updated
 
     public void Awake()
     {
@@ -39,6 +39,9 @@ public class SuspectListManager : MonoBehaviour
 
     }
 
+    /*
+     * switches to clickable suspectlist for final selection
+     */
     private void SwitchSuspectLists()
     {
         switched = true;

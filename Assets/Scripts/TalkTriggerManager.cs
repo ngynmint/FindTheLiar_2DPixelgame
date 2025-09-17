@@ -6,16 +6,16 @@ public class TalkTrigger : MonoBehaviour
     public NPC npc;
 
     private void OnTriggerEnter2D(Collider2D other)
-{
-    Debug.Log("Entered trigger with: " + other.name);
+    {
+        Debug.Log("Entered trigger with: " + other.name);
 
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player entered NPC trigger");
-            DialogueManager.Instance.SetCurrentNPC(npc);
-            talkButton.SetActive(true);
+            if (other.CompareTag("Player"))
+            {
+                Debug.Log("Player entered NPC trigger");
+                DialogueManager.Instance.SetCurrentNPC(npc);
+                talkButton.SetActive(true);
+        }
     }
-}
 
 
     private void OnTriggerExit2D(Collider2D other)

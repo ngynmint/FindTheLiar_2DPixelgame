@@ -5,6 +5,9 @@ public class PlayAgainManager : MonoBehaviour
 {
     public string sceneName;
 
+    /*
+    * reset all DoNotDestroy Instances (e.g. player and npc history and liar choice)
+    */
     public void OnPlayAgain()
     {
         Debug.Log("Play Again button clicked!");
@@ -26,13 +29,13 @@ public class PlayAgainManager : MonoBehaviour
             DialogueManager.Instance = null;
         }
 
-         if (SuspectListManager.Instance != null)
+        if (SuspectListManager.Instance != null)
         {
             Destroy(SuspectListManager.Instance.gameObject);
             SuspectListManager.Instance = null;
         }
 
-          if (EndSceneController.Instance != null)
+        if (EndSceneController.Instance != null)
         {
             Destroy(EndSceneController.Instance.gameObject);
             EndSceneController.Instance = null;

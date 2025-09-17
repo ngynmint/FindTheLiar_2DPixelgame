@@ -5,22 +5,24 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
+    // every NPC has idle and talking gameObject, dialoguestep counter, name, message history, dialogue UI elements, notes, audio
     [HideInInspector]
     public int dialogueStep = 0;
     public string npcName;
+    public List<(string role, string content)> messageHistory = new();
     [TextArea(3, 10)]
     public string systemPrompt;
-    public GameObject idleNPC;
+    public GameObject idleNPC; 
     public GameObject TalkingNPC;
-
     public GameObject dialoguePanel;
     public TMP_Text npcTextField;
     public GameObject npcNotes;
     public AudioSource dialogueAudio;
+    
 
-
-    [HideInInspector] public List<(string role, string content)> messageHistory = new();
-
+    /*
+    * Concatenates thief/not thief prompt, if they have been selected as the liar.
+    */
     private void Start()
     {
         var state = GameManager.Instance.GetNPCState(npcName);
@@ -43,25 +45,11 @@ public class NPC : MonoBehaviour
     }
 
     public void SetIsTalking(bool isTalking)
-{
-    if (idleNPC != null)
-        idleNPC.SetActive(!isTalking);
-
-    if (TalkingNPC != null)
-        TalkingNPC.SetActive(isTalking);
-}
-    public void SaveState()
     {
-        var state = GameManager.Instance.GetNPCState(npcName);
-        state.dialogueStep = dialogueStep;
-        state.messageHistory = new List<(string role, string content)>(messageHistory);
-    }
+        if (idleNPC != null)
+            idleNPC.SetActive(!isTalking);
 
-
-    public void ResetConversation()
-    {
-        messageHistory.Clear();
-        messageHistory.Add(("system", systemPrompt));
+        if (TalkingNPC != null)
+            TalkingNPC.SetActive(isTalking);
     }
-    
 }

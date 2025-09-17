@@ -11,12 +11,15 @@ public class SuspectIconToggle : MonoBehaviour
         UpdateIcon();
     }
 
+    /*
+     * Updates NPC icons dynamically depending on NPCState
+     */
     public void UpdateIcon()
     {
         bool hasTalked = GameManager.Instance.GetNPCState(npcName).hasTalkedToPlayer;
 
         iconNotTalkedTo.SetActive(!hasTalked);
         iconTalkedTo.SetActive(hasTalked);
-        
+
     }
 }

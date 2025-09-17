@@ -6,8 +6,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public List<NPCState> npcStates = new();
+    public List<NPCState> npcStates = new(); //list w all npc states
 
+    /*
+    * reset all NPC states
+    */
     public void Start()
     {
         ResetAllNPCStates();
@@ -25,12 +28,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void ResetAndDestroy()
-    {
-        Instance = null;
-        Destroy(gameObject);
-    }
-
 
     public void ResetAllNPCStates()
     {
@@ -41,18 +38,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ResetForNewGame()
-    {
-         foreach (var state in npcStates)
-        {
-            state.hasTalkedToPlayer = false;
-            state.dialogueStep = 0;
-            state.messageHistory.Clear();
-        }
-        
-    }
-
-
+    /*
+    * returns state or creates new ones, if not found
+    */
     public NPCState GetNPCState(string npcName)
     {
         var state = npcStates.Find(n => n.npcName == npcName);
@@ -64,7 +52,9 @@ public class GameManager : MonoBehaviour
         return state;
     }
 
-
+    /*
+     * Data class that stores individual NPC dialogue state and progress
+     */
     [System.Serializable]
     public class NPCState
     {

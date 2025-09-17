@@ -20,6 +20,9 @@ public class SuspectButtonHandler : MonoBehaviour, IPointerEnterHandler, IPointe
         redXIcon.SetActive(false);
     }
 
+    /*
+    * Handles player's final choice. Updates transition UI and text corresponding to the chosen NPC
+    */
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Player chose: " + suspectName);

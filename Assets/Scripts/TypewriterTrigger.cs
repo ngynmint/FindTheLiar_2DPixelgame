@@ -8,6 +8,10 @@ public class TypewriterTrigger : MonoBehaviour
     public float typingSpeed = 0.05f;
     public EndSceneController endSceneController;
     private string suspectName;
+
+    /*
+     * displays text on screen depending on player's choice
+     */
     public void TriggerText(string who)
     {
         suspectName = who;
@@ -39,6 +43,9 @@ public class TypewriterTrigger : MonoBehaviour
         StartCoroutine(TypeText(message));
     }
 
+    /*
+     * typewriter effect and loads next scene
+     */
     IEnumerator TypeText(string message)
     {
         targetText.text = "";

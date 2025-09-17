@@ -10,7 +10,7 @@ public class GroqAIService : MonoBehaviour
     public static GroqAIService Instance;
 
     [Header("Groq API Settings")]
-    public string apiKey = "";  
+    public string apiKey = "";  //API key
     private string endpoint = "https://api.groq.com/openai/v1/chat/completions";
     public string model = "llama-3.1-8b-instant";  
 
@@ -20,6 +20,9 @@ public class GroqAIService : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    /*
+    * Data structure for sent messages (tupel of role and conten)
+    */
     [System.Serializable]
     public class ChatMessage
     {
@@ -38,8 +41,11 @@ public class GroqAIService : MonoBehaviour
     {
         public string model;
         public List<ChatMessage> messages;
-        public float temperature = 0.7f;
+        //public float temperature = 0.7f; to control creativeness scale if needed? test?
 
+        /*
+        * Creates new Chat with model and message history
+        */
         public ChatRequest(string model, List<ChatMessage> messages)
         {
             this.model = model;
@@ -59,6 +65,11 @@ public class GroqAIService : MonoBehaviour
         public List<ChatChoice> choices;
     }
 
+    /*
+     * sends message history to LLM and handles response.
+     * Converts messagelist into JSON messages, HTTP request, request reaches API endpoint.
+     * Waits for response and parses JSON, chooses first AI response, 
+     */
     public IEnumerator SendMessageToAI(List<ChatMessage> messages, System.Action<string> onResponse)
     {
         Debug.Log("Sending request to Groq...");
@@ -81,13 +92,13 @@ public class GroqAIService : MonoBehaviour
             string json = webRequest.downloadHandler.text;
             Debug.Log("Groq Response: " + json);
             ChatResponse response = JsonConvert.DeserializeObject<ChatResponse>(json);
-            onResponse?.Invoke(response.choices[0].message.content.Trim());
+            onResponse?.Invoke(response.choices[0].message.content.Trim()); // activate callback function in dialoguemanagaer
         }
         else
         {
-            Debug.LogError("Groq API Error: " + webRequest.error);
-            Debug.LogError("Groq API Error: " + webRequest.responseCode + " | " + webRequest.downloadHandler.text);
-            onResponse?.Invoke("Sorry, I had trouble responding.");
+            Debug.LogError("Error: " + webRequest.error);
+            Debug.LogError("Error: " + webRequest.responseCode + " | " + webRequest.downloadHandler.text);
+            onResponse?.Invoke("[API not found]");
         }
     }
 }

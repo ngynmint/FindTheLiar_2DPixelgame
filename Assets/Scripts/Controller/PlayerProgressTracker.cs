@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// tracks player progress to show notification 
 public class PlayerProgressTracker : MonoBehaviour
 {
     public TMP_Text doneTalkingTextField;
@@ -38,6 +39,10 @@ public class PlayerProgressTracker : MonoBehaviour
         }
     }
 
+    /*
+     * Checks if all NPCs in the list have been talked to
+     * Returns true if all NPCs have hasTalkedToPlayer set to true
+     */
     public bool AllNPCsTalkedTo()
     {
         foreach (var npc in npcNames)
@@ -49,6 +54,9 @@ public class PlayerProgressTracker : MonoBehaviour
         return true;
     }
 
+    /*
+     * Shows all talked to panel with typewriter effect
+     */
     IEnumerator ShowDoneTalkingPanel()
     {
         doneTalkingPanel.SetActive(true);
@@ -73,6 +81,4 @@ public class PlayerProgressTracker : MonoBehaviour
     }
 
 
-    
-    
 }

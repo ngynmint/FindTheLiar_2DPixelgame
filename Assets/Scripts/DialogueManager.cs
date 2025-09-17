@@ -11,21 +11,22 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
 
     [Header("UI References")]
-    public GameObject talkButton;
+    public GameObject talkButton; //button to initiate conv
     private Coroutine currentTypingCoroutine;
 
-    public GameObject confirmButton;
-    public GameObject nextButton;
+    public GameObject confirmButton; //button to confirm player input
+    public GameObject nextButton; //button to jump to next dialogue step
 
-    public GameObject playerPanel;
+    public GameObject playerPanel; 
     public TMP_InputField playerInput;
 
-    public GameObject player;
+    public GameObject player; 
     [HideInInspector]
     public PlayerMovement playerMovement;
-    public GameObject suspectListPanel;
+    public GameObject suspectListPanel; 
 
     private NPC currentNPC;
+
 
     private void Awake()
     {
@@ -37,37 +38,43 @@ public class DialogueManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
+
+    /*
+    * allows player to press enter for confirmation as well
+    */
     private void Update()
-{
-    if (playerPanel.activeSelf && playerInput.isFocused && Input.GetKeyDown(KeyCode.Return))
     {
-        OnPlayerConfirm();
-    }
-}
-
-public void InitializeDialogueUI()
-{
-    if (player != null)
-        playerMovement = player.GetComponent<PlayerMovement>();
-
-    if (talkButton != null)
-    {
-        talkButton.SetActive(false);
-        talkButton.GetComponent<Button>().onClick.RemoveAllListeners();
-        talkButton.GetComponent<Button>().onClick.AddListener(OnTalk);
+        if (playerPanel.activeSelf && playerInput.isFocused && Input.GetKeyDown(KeyCode.Return))
+        {
+            OnPlayerConfirm();
+        }
     }
 
-    if (confirmButton != null)
+    /*
+    * Initialize and sets up Buttons and Listeners
+    */
+    public void InitializeDialogueUI()
     {
-        confirmButton.SetActive(false);
-        confirmButton.GetComponent<Button>().onClick.RemoveAllListeners();
-        confirmButton.GetComponent<Button>().onClick.AddListener(OnPlayerConfirm);
+        if (player != null)
+            playerMovement = player.GetComponent<PlayerMovement>();
+
+        if (talkButton != null)
+        {
+            talkButton.SetActive(false);
+            talkButton.GetComponent<Button>().onClick.RemoveAllListeners();
+            talkButton.GetComponent<Button>().onClick.AddListener(OnTalk);
+        }
+
+        if (confirmButton != null)
+        {
+            confirmButton.SetActive(false);
+            confirmButton.GetComponent<Button>().onClick.RemoveAllListeners();
+            confirmButton.GetComponent<Button>().onClick.AddListener(OnPlayerConfirm);
+        }
+
+        if (playerPanel != null)
+            playerPanel.SetActive(false);
     }
-
-    if (playerPanel != null)
-        playerPanel.SetActive(false);
-}
-
 
     public void SetCurrentNPC(NPC npc)
     {
@@ -75,7 +82,11 @@ public void InitializeDialogueUI()
         Debug.Log("NPC" + currentNPC + "has been set up");
     }
 
-
+    /*
+    * Upon pressing talkbutton, starts dialogue, updates the UI (suspectlist disappears, NPC talking panel, 
+    * stops player movement) and sends the system prompt of the NPC to the API.
+    * If already talked to, just display automated response, instead of AI response.
+    */
     public void OnTalk()
     {
         if (GameManager.Instance == null)
@@ -115,9 +126,47 @@ public void InitializeDialogueUI()
             StartCoroutine(SendToGroq(""));
         }
         ;
-
     }
 
+        
+    /*
+    * Sends the string to the LLM API.
+    * The first string gets added to the NPC's message history as a system prompt, and before sending, the message history
+    * is being formatted into a tupel for groq. After sending and receiving response, updates UI (disable player panel,
+    * activate NPC panel, NPC notes), adds response to the message history and displays it with typewriter effect.
+    */
+    IEnumerator SendToGroq(string prompt)
+    {
+        Debug.Log("Sending Prompt to AI");
+        Debug.Log(prompt);
+        if (currentNPC.dialogueStep == 0)
+            currentNPC.messageHistory.Add(("system", prompt));
+
+        List<ChatMessage> formattedMessages = new List<ChatMessage>(); //umwandlung in tupeln nötig...
+        foreach (var (role, content) in currentNPC.messageHistory)
+        {
+            formattedMessages.Add(new ChatMessage(role, content));
+        }
+
+        yield return GroqAIService.Instance.SendMessageToAI(formattedMessages, response => //callback, waits for response
+        {
+            currentNPC.SetIsTalking(true);
+            currentNPC.messageHistory.Add(("assistant", response));
+            playerPanel.SetActive(false);
+            currentNPC.dialoguePanel.SetActive(true);
+            currentNPC.npcNotes.SetActive(true);
+            if (currentTypingCoroutine != null)
+            StopCoroutine(currentTypingCoroutine);
+            currentNPC.npcTextField.text = "";
+            dialogueScrollRect.verticalNormalizedPosition = 0f;
+
+            StartCoroutine(TypewriterEffect(currentNPC.npcTextField, response));
+        });
+    }
+
+    /*
+    * Prewritten NPC responses, if already talked to.
+    */
     private string AlreadyTalkedResponse(string npcName)
     {
         switch (npcName)
@@ -139,6 +188,13 @@ public void InitializeDialogueUI()
     }
 
     public GameObject ScrollViewPlayer;
+
+    /*
+    * Handles clicking the Next Button after an NPC's response. If player has not asked 3 questions yet, updates UI
+    * (disable NPC panels and button, display player panelm inputfield and confirmationbutton), increases dialoguestep counter
+    * and syncs it. 
+    * If end of dialogue is reached, change NPC State and end dialogue.
+    */
     public void NextStep()
     {
         currentNPC.dialogueStep++;
@@ -167,8 +223,10 @@ public void InitializeDialogueUI()
 
     }
 
-
-
+    /*
+    * Handles confirmation after player input. Increases dialoguestep counter and syncs it, adds input to messagehistory
+    * of the NPC, updates UI (disables player panel and confirmation button) and sends it to the LLM.
+    */
     public void OnPlayerConfirm()
     {
         currentNPC.dialogueStep++;
@@ -184,38 +242,15 @@ public void InitializeDialogueUI()
         playerInput.text = "";
         StartCoroutine(SendToGroq(userInput));
     }
-    IEnumerator SendToGroq(string prompt)
-    {
-        Debug.Log("Sending Prompt to AI");
-        Debug.Log(prompt);
-        if (currentNPC.dialogueStep == 0)
-            currentNPC.messageHistory.Add(("user", prompt));
-
-        List<ChatMessage> formattedMessages = new List<ChatMessage>();
-        foreach (var (role, content) in currentNPC.messageHistory)
-        {
-            formattedMessages.Add(new ChatMessage(role, content));
-        }
-
-        yield return GroqAIService.Instance.SendMessageToAI(formattedMessages, response =>
-        {
-            currentNPC.SetIsTalking(true);
-            currentNPC.messageHistory.Add(("assistant", response));
-            playerPanel.SetActive(false);
-            currentNPC.dialoguePanel.SetActive(true);
-            currentNPC.npcNotes.SetActive(true);
-             if (currentTypingCoroutine != null)
-            StopCoroutine(currentTypingCoroutine);
-            currentNPC.npcTextField.text = "";
-            dialogueScrollRect.verticalNormalizedPosition = 0f;
-
-            StartCoroutine(TypewriterEffect(currentNPC.npcTextField, response));
-        });
-    }
+   
 
 
     public TMP_Text npcTextField;
     public ScrollRect dialogueScrollRect;
+
+    /*
+    * displays texts with a typewriter effect, activates NPC noises and displays the next step button after finishing couroutine
+    */
     IEnumerator TypewriterEffect(TMP_Text textComp, string fullText)
     {
         textComp.text = "";
@@ -271,6 +306,10 @@ public void InitializeDialogueUI()
 
     }
 
+    /*
+    * After three prompts, handles the end of the dialogue. Update UI (disable NPC and player panels, enable player movement,
+    * show suspectList again)
+    */
     void EndDialogue()
     {
         Debug.Log("reched");

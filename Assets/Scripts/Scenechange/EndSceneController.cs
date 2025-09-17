@@ -18,6 +18,10 @@ public class EndSceneController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    /*
+     * compares player's choice with game's random liar choice and loads scene depending on that
+     */
     public void CheckResult(string chosenSuspect)
     {
         if (LiarChooser.Instance == null)
